@@ -135,7 +135,7 @@ and overridden on an individual basis.
   set :haml, {:format => :html5 } # default Haml format is :xhtml
 
   get '/' do
-    haml :index, :haml_options => {:format => :html4 } # overridden
+    haml :index, :format => :html4 # overridden
   end
 
 

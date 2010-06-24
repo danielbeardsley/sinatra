@@ -136,7 +136,7 @@ und individuell überschrieben werden.
   set :haml, {:format => :html5 } # Standard Haml Format ist :xhtml
 
   get '/' do
-    haml :index, :haml_options => {:format => :html4 } # überschrieben
+    haml :index, :format => :html4 # überschrieben
   end
 
 

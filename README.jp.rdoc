@@ -131,7 +131,7 @@ hamlを使うにはhamlライブラリが必要です:
   set :haml, {:format => :html5 } # デフォルトのフォーマットは:xhtml
 
   get '/' do
-    haml :index, :haml_options => {:format => :html4 } # 上書き
+    haml :index, :format => :html4 # 上書き
   end
 
 
@@ -183,7 +183,7 @@ see {Options and Configurations}[http://www.sinatrarb.com/configuration.html],
 
   get '/stylesheet.css' do
     content_type 'text/css', :charset => 'utf-8'
-    sass :stylesheet, :sass_options => {:style => :expanded } # 上書き
+    sass :stylesheet, :style => :expanded # 上書き
   end
 
 
